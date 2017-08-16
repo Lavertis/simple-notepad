@@ -1,0 +1,9 @@
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\bin\Release\Notepad.exe.config
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\bin\Release\Notepad.exe
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\bin\Release\Notepad.pdb
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.Form1.resources
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.Properties.Resources.resources
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.csproj.GenerateResource.Cache
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.csproj.CoreCompileInputs.cache
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.exe
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.pdb
