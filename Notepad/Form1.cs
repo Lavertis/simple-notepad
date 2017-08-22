@@ -13,13 +13,9 @@ namespace Notepad
 {
     public partial class Form1 : Form
     {
-
         String path = "";
 
-        public Form1()
-        {
-            InitializeComponent();
-        }
+        public Form1() => InitializeComponent();
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -64,63 +60,31 @@ namespace Notepad
             {
                 exitPrompt();
 
-                if (DialogResult == DialogResult.No)
+                if (DialogResult == DialogResult.Yes)
+                {
+                    saveToolStripMenuItem_Click(sender, e);
+                    textBox1.Text = "";
+                    path = "";
+                }
+                else if (DialogResult == DialogResult.No)
                 {
                     textBox1.Text = "";
                     path = "";
                 }
-                else if (DialogResult == DialogResult.Yes)
-                {
-                    saveToolStripMenuItem_Click(sender, e);
-                }
+
             }
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            if (textBox1.Text != "")
-            {
-                exitPrompt();
+        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.SelectAll();
 
-                if (DialogResult == DialogResult.Yes)
-                {
-                    saveToolStripMenuItem_Click(sender, e);
-                }
-                else if (DialogResult == DialogResult.No)
-                {
-                    Application.Exit();
-                }
-            }
-            else
-            {
-                Application.Exit();
-            }
-        }
+        private void cutToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.Cut();
 
-        private void selectAllToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            textBox1.SelectAll();
-        }
+        private void copyToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.Copy();
 
-        private void cutToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            textBox1.Cut();
-        }
+        private void pasteToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.Paste();
 
-        private void copyToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            textBox1.Copy();
-        }
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.SelectedText = "";
 
-        private void pasteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            textBox1.Paste();
-        }
-
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            textBox1.SelectedText = "";
-        }
 
         private void wordWrapToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -142,10 +106,57 @@ namespace Notepad
         {
             if (fontDialog1.ShowDialog() == DialogResult.OK)
             {
-                textBox1.Font = textBox1.Font = new Font(fontDialog1.Font, fontDialog1.Font.Style);           ///// Trzeba dodac mozliwosc drukowania i znajdowania wyrazów i replace wyrazów
+                textBox1.Font = textBox1.Font = new Font(fontDialog1.Font, fontDialog1.Font.Style);
                 textBox1.ForeColor = fontDialog1.Color;
             }
         }
 
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form aboutForm = new Form2();
+            aboutForm.Show();
+        }
+
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e) => Application.Exit();
+
+        private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (textBox1.Text != "")
+            {
+                exitPrompt();
+
+                if (DialogResult == DialogResult.Yes)
+                {
+                    saveToolStripMenuItem_Click(sender, e);
+                }
+                else if (DialogResult == DialogResult.Cancel)
+                {
+                    e.Cancel = true;
+                }
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Control)
+            {
+                switch (e.KeyCode)
+                {
+                    case Keys.A:
+                        e.SuppressKeyPress = true;
+                        textBox1.SelectAll();
+                        break;
+                    case Keys.N:
+                        e.SuppressKeyPress = true;
+                        newToolStripMenuItem_Click(sender, e);
+                        break;
+                    case Keys.S:
+                        e.SuppressKeyPress = true;
+                        saveToolStripMenuItem_Click(sender, e);
+                        break;
+                }
+            }
+        }
     }
 }

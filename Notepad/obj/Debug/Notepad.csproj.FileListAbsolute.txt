@@ -18,3 +18,4 @@ C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Debug
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Debug\Notepad.csproj.CoreCompileInputs.cache
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Debug\Notepad.exe
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Debug\Notepad.pdb
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Debug\Notepad.Form2.resources
