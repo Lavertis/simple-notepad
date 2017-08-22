@@ -8,3 +8,4 @@ C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Relea
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.exe
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.pdb
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.Form2.resources
+C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.csprojResolveAssemblyReference.cache
