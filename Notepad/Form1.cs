@@ -114,7 +114,7 @@ namespace Notepad
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Form aboutForm = new Form2();
-            aboutForm.Show();
+            aboutForm.ShowDialog();
         }
 
 
