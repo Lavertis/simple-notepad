@@ -13,15 +13,59 @@ namespace Notepad
 {
     public partial class Form1 : Form
     {
-        String path = "";
+        String path = String.Empty;
 
         public Form1() => InitializeComponent();
+
+        private string ReturnMessageFromFormat(string type)
+        {
+            switch (type)
+            {
+                case "ino":
+                    return "Arduino";
+                    break;
+                case "cs":
+                    return "C#";
+                    break;
+                case "cpp":
+                    return "C++";
+                    break;
+                case "c":
+                    return "C";
+                    break;
+                case "btwo":
+                    return "Braintwo";
+                    break;
+                case "json":
+                    return "Json";
+                    break;
+                case "xml":
+                    return "Xml";
+                    break;
+                case "html":
+                    return "HTML";
+                    break;
+                case "css":
+                    return "CSS";
+                    break;
+                case "js":
+                    return "JavaScript";
+                    break;
+                default:
+                    return "Text";
+                    break;
+
+            }
+        }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 textBox1.Text = File.ReadAllText(path = openFileDialog1.FileName);
+                string[] SplitExtension = openFileDialog1.FileName.Split('.');
+                labelFormat.Text = ReturnMessageFromFormat(SplitExtension[1]);
+               
             }
         }
 
@@ -35,7 +79,7 @@ namespace Notepad
 
         private void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (path != "")
+            if (!String.IsNullOrWhiteSpace(path))
             {
                 File.WriteAllText(path, textBox1.Text);
             }
@@ -56,20 +100,20 @@ namespace Notepad
 
         private void newToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != "")
+            if (!String.IsNullOrWhiteSpace(textBox1.Text))
             {
                 exitPrompt();
 
                 if (DialogResult == DialogResult.Yes)
                 {
                     saveToolStripMenuItem_Click(sender, e);
-                    textBox1.Text = "";
-                    path = "";
+                    textBox1.Text = String.Empty;
+                    path = String.Empty;;
                 }
                 else if (DialogResult == DialogResult.No)
                 {
-                    textBox1.Text = "";
-                    path = "";
+                    textBox1.Text = String.Empty;;
+                    path = String.Empty;;
                 }
 
             }
@@ -83,7 +127,7 @@ namespace Notepad
 
         private void pasteToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.Paste();
 
-        private void deleteToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.SelectedText = "";
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e) => textBox1.SelectedText = String.Empty;
 
 
         private void wordWrapToolStripMenuItem_Click(object sender, EventArgs e)
@@ -122,7 +166,7 @@ namespace Notepad
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            if (textBox1.Text != "")
+            if (!string.IsNullOrWhiteSpace(textBox1.Text))
             {
                 exitPrompt();
 
@@ -157,6 +201,27 @@ namespace Notepad
                         break;
                 }
             }
+        }
+
+        private void blackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.ForeColor = Color.White;
+            textBox1.BackColor = Color.Black;
+            this.BackColor = Color.Gray;
+        }
+
+        private void grayToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.ForeColor = Color.Black;
+            textBox1.BackColor = Color.Gray;
+            this.BackColor = Color.Gray;
+        }
+
+        private void defaultToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.ForeColor = Color.Black;
+            textBox1.BackColor = Color.White;
+            this.BackColor = Color.White;
         }
     }
 }

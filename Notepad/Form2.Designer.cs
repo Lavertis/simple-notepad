@@ -58,12 +58,13 @@
             // 
             // label1
             // 
-            this.label1.Font = new System.Drawing.Font("DejaVu Sans", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 124);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 115);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(260, 37);
+            this.label1.Size = new System.Drawing.Size(260, 73);
             this.label1.TabIndex = 3;
-            this.label1.Text = "This is my first simple notepad app in C# created for educational purposes.";
+            this.label1.Text = "This is my first simple notepad app in C# created for educational purposes.      " +
+    "  Version forked by Paulo Henrique.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form2
