@@ -1,4 +1,4 @@
 # Simple Notepad
-This is my first simple notepad app in C# created for educational purposes
+Simple C# notepad created in Visual Studio
 
 ![](Screenshot.png)
