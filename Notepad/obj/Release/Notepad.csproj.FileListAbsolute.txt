@@ -9,3 +9,14 @@ C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Relea
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.pdb
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.Form2.resources
 C:\Users\kuzmi\Desktop\Projects\C#\Applications\Simple_Notepad\Notepad\obj\Release\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.csprojResolveAssemblyReference.cache
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.Form1.resources
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.Form2.resources
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.Properties.Resources.resources
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.csproj.GenerateResource.Cache
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.csproj.CoreCompileInputs.cache
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.exe
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\obj\Release\Notepad.pdb
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\bin\Release\Notepad.exe.config
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\bin\Release\Notepad.exe
+C:\Users\Paulo Henrique\Downloads\Simple_Notepad-master\Notepad\bin\Release\Notepad.pdb
